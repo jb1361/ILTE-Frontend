@@ -3,30 +3,35 @@
   <div class="header-background"></div>
 
   <div class="menu">
-    <button class="menu-item" mat-button [matMenuTriggerFor]="attendance">Attendance</button>
-
-    <mat-menu #attendance="matMenu">
-      <button mat-menu-item [routerLink]="''">Attendance</button>
-      <button mat-menu-item [routerLink]="'/faculty'">Faculty</button>
-      <button mat-menu-item [routerLink]="'/workshops'">Workshops</button>
-    </mat-menu>
+    <button class="menu-item" mat-button [matMenuTriggerFor]="attendance">Records</button>
+    <div class="menu-drop-down menu-drop-down-1">
+      <mat-menu #attendance="matMenu">
+        <button mat-menu-item [routerLink]="''">Attendance</button>
+        <button mat-menu-item [routerLink]="'/faculty'">Faculty</button>
+        <button mat-menu-item [routerLink]="'/workshops'">Workshops</button>
+      </mat-menu>
+    </div>
     <button class="menu-item" mat-button [routerLink]="'/reports'">Reports</button>
     <button class="menu-item" mat-button [matMenuTriggerFor]="admin">Admin</button>
-    <mat-menu #admin="matMenu">
-      <button mat-menu-item [routerLink]="'/register-new-user'">Register New User</button>
-      <button mat-menu-item [routerLink]="'/change-user-password'">Change User Password</button>
-      <button mat-menu-item [routerLink]="'/delete-user'">Delete User</button>
-      <button mat-menu-item [routerLink]="'/database-options'">Database Options</button>
-    </mat-menu>
+    <div class="menu-drop-down menu-drop-down-2">
+      <mat-menu #admin="matMenu">
+        <button mat-menu-item [routerLink]="'/register-new-user'">Register New User</button>
+        <button mat-menu-item [routerLink]="'/change-user-password'">Change User Password</button>
+        <button mat-menu-item [routerLink]="'/delete-user'">Delete User</button>
+        <button mat-menu-item [routerLink]="'/database-options'">Database Options</button>
+      </mat-menu>
+    </div>
     <button class="menu-item " mat-icon-button [matMenuTriggerFor]="person">
       <mat-icon>person</mat-icon>
     </button>
-    <mat-menu #person="matMenu">
-      <button mat-menu-item [routerLink]="'/change-password'">Change Password</button>
-      <button mat-menu-item [routerLink]="'/logout'">
-        <mat-icon>exit_to_app</mat-icon>
-        Logout
-      </button>
-    </mat-menu>
+    <div class="menu-drop-down menu-drop-down-3">
+      <mat-menu #person="matMenu">
+        <button mat-menu-item [routerLink]="'/change-password'">Change Password</button>
+        <button mat-menu-item [routerLink]="'/logout'">
+          <mat-icon>exit_to_app</mat-icon>
+          Logout
+        </button>
+      </mat-menu>
+    </div>
   </div>
 </div>
