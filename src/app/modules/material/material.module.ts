@@ -18,7 +18,8 @@ import {
   MatProgressBarModule,
   MatSlideToggleModule,
   MatFormFieldModule,
-  MatTreeModule
+  MatTreeModule,
+  MatMenuModule
 } from '@angular/material';
 
 @NgModule({
@@ -31,22 +32,18 @@ import {
     MatInputModule,
     MatSelectModule,
     MatTabsModule,
-    MatNativeDateModule,
-    MatDatepickerModule,
-    MatButtonModule,
-    MatCardModule,
-    MatSelectModule,
-    MatIconModule,
     MatDialogModule,
-    MatSnackBarModule,
+    MatIconModule,
     MatProgressSpinnerModule,
-    MatCheckboxModule,
+    MatSnackBarModule,
+    MatNativeDateModule,
     MatListModule,
     MatTooltipModule,
     MatProgressBarModule,
     MatSlideToggleModule,
     MatFormFieldModule,
-    MatTreeModule
+    MatTreeModule,
+    MatMenuModule
   ]
 })
 export class MaterialModule {

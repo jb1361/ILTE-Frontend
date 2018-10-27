@@ -10,7 +10,25 @@
   top: 0;
   position: absolute;
   width: 100%;
-  z-index: 10;
   height: 52px;
   background-color: rgb(122, 23, 5);
+}
+.menu-item {
+  background: transparent;
+  color: white;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-right: 20px;
+  //margin-top: 15px;
+}
+.header-bar {
+  width: 100%;
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+.cdk-overlay-connected-position-bounding-box {
+  display: flex;
+  justify-content: center;
 }

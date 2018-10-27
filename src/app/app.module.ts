@@ -6,6 +6,7 @@ import {ROUTES} from './app.routes';
 import {MaterialModule} from './modules/material/material.module';
 import {UtilModule} from './modules/util/util.module';
 import {AttendanceModule} from './modules/attendance/attendance.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import {AttendanceModule} from './modules/attendance/attendance.module';
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES),
+    BrowserAnimationsModule,
     MaterialModule,
+    RouterModule.forRoot(ROUTES),
     UtilModule,
     AttendanceModule
   ],
